@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网站留言板</title>
+<style type="text/css">
+body {
+	background-color: #F2F2F2;
+}
+</style>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_jumpMenuGo(objId,targ,restore){ //v9.0
+  var selObj = null;  with (document) { 
+  if (getElementById) selObj = getElementById(objId);
+  if (selObj) eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0; }
+}
+</script>
+</head>
+
+<body>
+<form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+  <table width="892" border="1" align="center" cellpadding="3" cellspacing="1">
+    <tr>
+      <td height="100" colspan="2" align="center" bgcolor="#3399FF"><p>
+        <object id="FlashID" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="500" height="100">
+          <param name="movie" value="未命名-2.swf" />
+          <param name="quality" value="high" />
+          <param name="wmode" value="opaque" />
+          <param name="swfversion" value="15.0.0.0" />
+          <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
+          <param name="expressinstall" value="Scripts/expressInstall.swf" />
+          <param name="BGCOLOR" value="#3399FF" />
+          <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+          <!--[if !IE]>-->
+          <object type="application/x-shockwave-flash" data="未命名-2.swf" width="500" height="100">
+            <!--<![endif]-->
+            <param name="quality" value="high" />
+            <param name="wmode" value="opaque" />
+            <param name="swfversion" value="15.0.0.0" />
+            <param name="expressinstall" value="Scripts/expressInstall.swf" />
+            <param name="BGCOLOR" value="#3399FF" />
+            <!-- 浏览器将以下替代内容显示给使用 Flash Player 6.0 和更低版本的用户。 -->
+            <div>
+              <h4>此页面上的内容需要较新版本的 Adobe Flash Player。</h4>
+              <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获取 Adobe Flash Player" /></a></p>
+            </div>
+            <!--[if !IE]>-->
+          </object>
+          <!--<![endif]-->
+        </object>
+      </p></td>
+    </tr>
+    <tr>
+      <td width="108" height="50">你的名字</td>
+      <td width="763" height="50"><label for="name">
+        <input name="name" type="text" id="name" size="15" maxlength="10" />
+      您没有注册？
+      
+      </label></td>
+    </tr>
+    <tr>
+      <td height="50">主题评论</td>
+      <td height="50"><input name="zt" type="text" id="zt" size="50" maxlength="200" />
+      <label for="zt">不能超过200个汉字
+        <select name="select" id="select">
+          <option>选择主题</option>
+          <option>动漫赏析</option>
+          <option>图片赏析</option>
+          <option>金曲唱片</option>
+        </select>
+      </label></td>
+    </tr>
+    <tr>
+      <td height="50" rowspan="2">看完我的大美宁城啥心情呢？</td>
+      <td height="50"><input type="radio" name="radio1" id="radio" value="radio" />
+        <img src="image/表单素材文件夹/em01.gif" width="19" height="19" />
+      <label for="radio1">
+        <input type="radio" name="radio1" id="radio2" value="radio2" />
+        <img src="image/表单素材文件夹/face4.gif" width="22" height="22" />
+        <input type="radio" name="radio1" id="radio3" value="radio3" />
+      <img src="image/表单素材文件夹/em06.gif" width="19" height="19" /></label></td>
+    </tr>
+    <tr>
+      <td height="50"><input type="radio" name="radio1" id="radio4" value="radio4" />
+        <img src="image/表单素材文件夹/em08.gif" width="19" height="19" />
+<label for="radio1"></label>
+      <input type="radio" name="radio1" id="radio5" value="radio5" />
+      <img src="image/表单素材文件夹/face7.gif" width="22" height="22" />
+<label for="radio1"></label>
+      <input type="radio" name="radio1" id="radio6" value="radio6" />
+      <label for="radio1"><img src="image/表单素材文件夹/em15.gif" width="19" height="19" /></label></td>
+    </tr>
+    <tr>
+      <td height="50">文件上传</td>
+      <td height="50"><label for="textfield"></label>
+        <label for="fileField"></label>
+      <input type="file" name="fileField" id="fileField" /></td>
+    </tr>
+    <tr>
+      <td width="108" height="50">有没有想来一起玩耍啊</td>
+      <td height="50"><textarea name="nr" id="nr" cols="60" rows="6"></textarea>
+      <label for="nr">不能超过500个文字</label></td>
+    </tr>
+    <tr>
+      <td width="108" height="50">心情图片</td>
+      <td height="50"><input type="checkbox" name="checkbox" id="checkbox" />
+        <img src="image/表单素材文件夹/face2.gif" width="22" height="22" />
+      <label for="checkbox">
+        <input type="checkbox" name="checkbox2" id="checkbox2" />
+    </label>
+      <img src="image/表单素材文件夹/face5.gif" width="22" height="22" />
+      <input type="checkbox" name="checkbox3" id="checkbox3" />
+      <label for="checkbox3"></label>
+      <img src="image/表单素材文件夹/face12.gif" width="22" height="22" />
+      <input type="checkbox" name="checkbox4" id="checkbox4" />
+      <label for="checkbox4"></label>
+      <img src="image/表单素材文件夹/face15.gif" width="22" height="22" />
+      <input type="checkbox" name="checkbox5" id="checkbox5" />
+      <label for="checkbox5"><img src="image/表单素材文件夹/face9.gif" width="22" height="22" /></label></td>
+    </tr>
+    <tr>
+      <td height="50" rowspan="2">高级设置</td>
+      <td height="50">签名：
+        <input type="radio" name="radio7" id="radio7" value="radio7" />
+      不显示
+      <label for="radio7"></label>
+      <input type="radio" name="radio7" id="radio8" value="radio8" />
+      <label for="radio7"></label>
+      显示
+      <input type="radio" name="radio7" id="radio9" value="radio9" />
+      <label for="radio7">匿名</label></td>
+    </tr>
+    <tr>
+      <td height="50">回帖通知：      
+        <input type="radio" name="radio2" id="radio10" value="radio10" />
+        不通知
+      <label for="radio2"></label>
+      <input type="radio" name="radio2" id="radio11" value="radio11" />
+      <label for="radio2"></label>
+      邮件通知
+      <input type="radio" name="radio2" id="radio12" value="radio12" />
+      短信通知
+      <label for="radio2"></label>
+      <input type="radio" name="radio2" id="radio13" value="radio13" />
+      <label for="radio2">邮件和短信通知</label></td>
+    </tr>
+    <tr>
+      <td height="50" colspan="2"><select name="jumpMenu" id="jumpMenu">
+        <option selected="selected">友情链接</option>
+        <option value="http：//www.baidu.com">百度</option>
+        <option value="www.imnu.edu.cn">内蒙古师范大学</option>
+      </select>
+      <input type="button" name="go_button" id= "go_button" value="前往" onclick="MM_jumpMenuGo('jumpMenu','parent',0)" />
+      <input type="submit" name="button" id="button" value="发表留言" />
+      <input type="reset" name="button2" id="button2" value="重新输入" />
+      &nbsp;&nbsp;&nbsp;&nbsp;联系我点这里<strong> <a href="Untitled-6.html">啦啦啦</a></strong></td>
+    </tr>
+  </table>
+</form>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+</script>
+</body>
+</html>
