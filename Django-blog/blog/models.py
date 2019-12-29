@@ -1,5 +1,7 @@
-from django.db import models
 from django.contrib.auth.models import User
+from django.db import models
+from django.urls import reverse
+from django.utils import timezone
 
 # Create your models here.
 class Category(models.Model):
@@ -44,7 +46,7 @@ class Post(models.Model):
     body=models.TextField('正文')
 
     # 这两个列分别表示文章的创建时间和最后一次的修改时间，存储时间的字段用DateTimeField类型。
-    created_time=models.DateField('创建时间')
+    created_time=models.DateField('创建时间', default=timezone.now)
     modified_time=models.DateField('修改时间')
 
     # 文章摘要，可以没有文章，但默认情况下CharField要求我们必须存入数据，否则就会报错
@@ -67,6 +69,9 @@ class Post(models.Model):
     # 因为我们规定一篇文章只能有一个作者，而一个作者可能会写多篇文章，因此这是一对多的关联关系，和
     # Category 类似。
     author=models.ForeignKey(User,verbose_name='作者',on_delete=models.CASCADE)
+    def save(self,*args,**kwargs):
+        self.modified_time=timezone.now()
+        super().save(*args,**kwargs)
 
     class Meta:
         verbose_name='文章'
@@ -75,3 +80,8 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+
+    #自定义 get_absolute_url 方法
+    #记得从 django.urls 中导入reverse的函数
+    #def get_absolute_url(self):
+        #return reverse('blog:detail',kwargs={'pk':self.pk})
