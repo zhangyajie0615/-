@@ -3,6 +3,7 @@ from django.db import models
 from django.urls import reverse
 from django.utils import timezone
 
+
 # Create your models here.
 class Category(models.Model):
     """
@@ -21,6 +22,7 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+
 class Tag(models.Model):
     """
     标签Tag也比较简单，和Category一样
@@ -34,6 +36,7 @@ class Tag(models.Model):
 
     def __str__(self):
         return self.name
+
 
 class Post(models.Model):
     """
@@ -69,9 +72,6 @@ class Post(models.Model):
     # 因为我们规定一篇文章只能有一个作者，而一个作者可能会写多篇文章，因此这是一对多的关联关系，和
     # Category 类似。
     author=models.ForeignKey(User,verbose_name='作者',on_delete=models.CASCADE)
-    def save(self,*args,**kwargs):
-        self.modified_time=timezone.now()
-        super().save(*args,**kwargs)
 
     class Meta:
         verbose_name='文章'
@@ -80,8 +80,11 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    def save(self, *args, **kwargs):
+        self.modified_time = timezone.now()
+        super().save(*args, **kwargs)
 
     #自定义 get_absolute_url 方法
     #记得从 django.urls 中导入reverse的函数
-    #def get_absolute_url(self):
-        #return reverse('blog:detail',kwargs={'pk':self.pk})
+    def get_absolute_url(self):
+        return reverse('blog:detail',kwargs={'pk':self.pk})
