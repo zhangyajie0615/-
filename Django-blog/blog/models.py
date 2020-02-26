@@ -1,10 +1,12 @@
 from django.db import models
 
 # Create your models here.
+import markdown
 from django.urls import reverse
 from django.utils import timezone
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils.html import strip_tags
 
 
 class Category(models.Model):
@@ -58,6 +60,23 @@ class Post(models.Model):
     # 指定 CharField 的 blank=True 参数值后就可以允许空值了。
     excerpt = models.CharField('摘要',max_length=200, blank=True)
 
+    def save(self, *args, **kwargs):
+        self.modified_time = timezone.now()
+
+        #首先实例化一个Markdown类，用于渲染body的文本
+        #由于摘要并不需要生成文章目录，所以去掉了目录拓展
+        md = markdown.Markdown(extensions=[
+            'markdown.extensions.extra',
+            'markdown.extensions.codehilite',
+        ])
+
+        #先将Markdown 文本渲染成HTML文本
+        #strip_tags去掉HTML文本的全部HTML标签
+        #从文本摘取前54个字符赋给excerpt
+        self.excerpt = strip_tags(md.convert(self.body))[:54]
+
+        super().save(*args, **kwargs)
+
     # 这是分类与标签，分类与标签的模型我已经定义在上面。
     # 这里把文章对应的数据库表和分类、标签对应的数据库表关联了起来，但是关联形式稍微有点不同。
     # 规定一篇文章只能对应一个分类，但是一个分类下可以有多篇文章，所以使用的是 ForeignKey，即一
@@ -84,9 +103,6 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-    def save(self,*args,**kwargs):
-        self.modified_time=timezone.now()
-        super().save(*args,**kwargs)
 
     def get_absolute_url(self):
         return reverse('blog:detail',kwargs={'pk':self.pk})
