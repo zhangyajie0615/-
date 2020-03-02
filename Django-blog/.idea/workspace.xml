@@ -2,19 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1842c80-9b1d-4046-85ff-a7024b57b4f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templatetags/blog_extras.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/inclusions/_archives.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/inclusions/_categories.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/inclusions/_recent_posts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/inclusions/_tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comments/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comments/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comments/templatetags/comments_extras.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comments/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/comments/inclusions/_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/comments/inclusions/_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/comments/preview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../virtualenv/Django-blog/.idea/Django-blog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templatetags/blog_extras.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templatetags/blog_extras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/inclusions/_archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/inclusions/_archives.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/inclusions/_categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/inclusions/_categories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/inclusions/_tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/inclusions/_tags.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,6 +46,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -95,6 +104,12 @@
       <workItem from="1582424463327" duration="28635000" />
       <workItem from="1582604698556" duration="15180000" />
       <workItem from="1582679514375" duration="9732000" />
+      <workItem from="1582697510315" duration="9488000" />
+      <workItem from="1582766836770" duration="23059000" />
+      <workItem from="1582857488829" duration="18445000" />
+      <workItem from="1582939516476" duration="12453000" />
+      <workItem from="1583028377331" duration="13346000" />
+      <workItem from="1583114299872" duration="926000" />
     </task>
     <servers />
   </component>
