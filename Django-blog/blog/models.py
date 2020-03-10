@@ -105,6 +105,29 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-
     def get_absolute_url(self):
         return reverse('blog:detail',kwargs={'pk':self.pk})
+
+
+class PicTest(models.Model):
+    """上传图片"""
+
+    class Meta:
+        verbose_name = '上传图片'
+        verbose_name_plural = verbose_name
+    pic = models.ImageField(verbose_name='图片',upload_to='img')
+    #music = models.FileField(verbose_name='音乐', default="", upload_to='mus')
+
+    def __str__(self):
+        return self.name
+
+
+
+
+
+
+
+
+
+
+

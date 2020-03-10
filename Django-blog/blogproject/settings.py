@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig', #注册blog应用
-    'comments.apps.CommentsConfig'#注册comments应用
+    'comments.apps.CommentsConfig',#注册comments应用
 ]
 
 MIDDLEWARE = [
@@ -120,3 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#配置上传照片保存目录
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'#url映射

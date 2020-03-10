@@ -5,7 +5,7 @@ from django.http import HttpResponse
 import re
 import markdown
 from django.shortcuts import render,get_object_or_404
-from .models import Post,Category,Tag
+from .models import Post, Category, Tag,PicTest
 from django.utils.text import slugify
 from markdown.extensions.toc import TocExtension
 
