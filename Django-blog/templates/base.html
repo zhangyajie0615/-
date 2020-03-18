@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- css -->
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"><!-- 轮播最新的css版本 -->
+    <link rel="stylesheet" href="{% static 'mus/music.css' %}"><!-- 音乐的css -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'blog/css/pace.css' %}">
@@ -125,6 +125,25 @@
                 {% endblock main %}
             </main>
             <aside class="col-md-4">
+
+            <div class="tit01">
+                <h3>资源共享池</h3>
+                <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                <p style="text-align: left"><a href="https://docs.djangoproject.com" class="btn btn-primary" target="_blank">Django</a></p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                <p style="text-align: left;"><a href="https://www.runoob.com/" class="btn btn-success" target="_blank">菜鸟教程</a></p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                <p style="text-align: left;"><a href="https://www.liaoxuefeng.com/wiki/896043488029600" class="btn btn-danger" target="_blank">Git教程</a></p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                <p style="text-align: left;"><a href="https://www.bootcss.com/" class="btn btn-warning" target="_blank">Bootstrap</a></p>
+            </div>
+        </div>
+            </div>
+
                 {% block toc %}
                 {% endblock toc %}
 
@@ -165,7 +184,6 @@
         </ul>
     </nav>
 </div>
-<audio src="media" controls id="audio"></audio>
 <script src="{% static 'blog/js/script.js' %}"></script>
 
     <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
@@ -174,6 +192,26 @@
         hljs.initHighlightingOnLoad();
         hljs.initLineNumbersOnLoad();
     </script>
+
+
+<div class="myaudio">
+	<div class="myaudio-center">
+		<audio id="aud">
+			<source src='/media/mus/BachBeats%20-%20Super%20Love.mp3' type='audio/ogg'  >
+		</audio>
+		<div class="aud-btn">
+            <img src="/media/img/play.png" id="play" />
+		</div>
+		<div class="aud-show">
+			<div id="Progress-time">00:00</div>
+			<div id="Progress">
+				<span id="jin"></span><span id="yuan"></span>
+			</div>
+			<div id="Progress-end">00:00</div>
+		</div>
+	</div>
+</div>
+<script src="{% static 'mus/music.js' %}"></script>
 
 </body>
 </html>

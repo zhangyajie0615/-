@@ -97,6 +97,12 @@ class Post(models.Model):
     # Category 类似。
     author = models.ForeignKey(User, verbose_name='作者',on_delete=models.CASCADE)
 
+    views = models.PositiveIntegerField(default=0,editable=False)
+
+    def increase_views(self):
+        self.views += 1
+        self.save(update_fields=['views'])
+
     class Meta:
         verbose_name = '文章'
         verbose_name_plural = verbose_name
@@ -106,20 +112,17 @@ class Post(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        return reverse('blog:detail',kwargs={'pk':self.pk})
+        return reverse('blog:detail',kwargs={'pk': self.pk})
 
 
 class PicTest(models.Model):
-    """上传图片"""
+    """上传图文件"""
 
     class Meta:
-        verbose_name = '上传图片'
+        verbose_name = '上传文件'
         verbose_name_plural = verbose_name
-    pic = models.ImageField(verbose_name='图片',upload_to='img')
-    #music = models.FileField(verbose_name='音乐', default="", upload_to='mus')
-
-    def __str__(self):
-        return self.name
+    pic = models.ImageField(verbose_name='图片', default="", upload_to='img', blank=True)
+    music = models.FileField(verbose_name='音乐', default="", upload_to='mus', blank=True)
 
 
 
