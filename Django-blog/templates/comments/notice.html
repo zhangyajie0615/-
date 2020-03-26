@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block main %}
+    {% for notice in notice_list %}
+    <article class="post post-{{notice.pk}}">
+        <header class="entry-header">
+            <h1 class="entry-title">
+                <a href="#">{{notice.name}}</a>
+            </h1>
+            <div class="entry-meta">
+                <span class="post-date"><a href="#"><time class="entry-date"
+                                                          datetime="{{ notice.created_time }}">{{ notice.created_time }}</time></a></span>
+            </div>
+        </header>
+        <div class="entry-content clearfix">
+            {{ notice.text }}
+        </div>
+    </article>
+    {% empty %}
+        <div class="no-post">暂时还没有发布公告！</div>
+    {% endfor %}
+{% endblock main %}

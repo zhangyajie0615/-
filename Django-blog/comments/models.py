@@ -12,7 +12,7 @@ class Comment(models.Model):
     post = models.ForeignKey('blog.Post', verbose_name='文章',on_delete=models.CASCADE)
 
     class Meta:
-        verbose_name='评论'
+        verbose_name = '评论'
         verbose_name_plural=verbose_name
         ordering = ['-created_time']
 
@@ -20,12 +20,18 @@ class Comment(models.Model):
         return '{}:{}'.format(self.name, self.text[:20])
 
 
+class Notice(models.Model):
+    name = models.CharField('标题', max_length=50)
+    text = models.TextField('内容')
+    created_time = models.DateTimeField('创建时间', default=timezone.now)
 
+    class Meta:
+        verbose_name = '公告'
+        verbose_name_plural = verbose_name
+        ordering = ['-created_time']
 
-
-
-
-
+    def __str__(self):
+        return self.name
 
 
 

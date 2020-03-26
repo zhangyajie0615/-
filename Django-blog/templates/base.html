@@ -1,5 +1,6 @@
 {% load static %}
 {% load blog_extras %}
+{% load leaves_extras %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,47 +14,14 @@
     <link rel="stylesheet" href="{% static 'mus/music.css' %}"><!-- 音乐的css -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'blog/css/pace.css' %}">
     <link rel="stylesheet" href="{% static 'blog/css/custom.css' %}">
 
     <!-- js -->
     <script src="{% static 'blog/js/jquery-2.1.3.min.js' %}"></script>
     <script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'blog/js/pace.min.js' %}"></script>
-    <script src="{% static 'blog/js/modernizr.custom.js' %}"></script>
 
     <link href="https://cdn.bootcss.com/highlight.js/9.15.8/styles/github.min.css" rel="stylesheet">
-
-    <style>
-        .codehilite{
-            padding: 0;
-        }
-        /* for block of numbers */
-        .hljs-ln-numbers{
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-
-            text-align: center;/*文本对齐方式*/
-            color: #ccc;
-            border-right:1px solid #ccc;/*设置右边框的样式*/
-            vertical-align: top;/*设置元素的垂直对齐方式*/
-            padding-right: 5px;/*设置元素的右内边距*/
-        }
-
-        .hljs-ln-n {
-            width: 30px;
-        }
-
-        /* for block of code */
-        .hljs-ln .hljs-ln-code {
-            padding-left: 10px;/*设置元素左内边距*/
-            white-space: pre;/*设置如何处理元素中的 空白会被浏览器保留*/
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'blog/css/markdown.css' %}">
 
     <style type="text/css">
     #myCarousel  .carousel-inner > .item > img {
@@ -67,9 +35,8 @@
 
     {% if messages %}
         {% for message in messages %}
-        <div class="alert alert-{{ message.tags }} alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
-                    aria-hidden="true">×</span></button>
+        <div class="alert alert-{{ message.tags }} alert-dismissible" >
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>×</span></button>
             {{ message }}
         </div>
         {% endfor %}
@@ -96,16 +63,16 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="cl-effect-11"><a href="{% url 'blog:index' %}" data-hover="首页">首页</a></li>
                             <li class="cl-effect-11"><a href="full-width.html" data-hover="博客">博客</a></li>
-                            <li class="cl-effect-11"><a href="about.html" data-hover="关于">关于</a></li>
-                            <li class="cl-effect-11"><a href="contact.html" data-hover="联系">联系</a></li>
+                            <li class="cl-effect-11"><a href="{% url 'leaves:liu' %}" data-hover="留言">留言</a></li>
+                            <li class="cl-effect-11"><a href="{% url 'comments:notice' %}" data-hover="公告">公告</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>
                 <div id="header-search-box">
                     <a id="search-menu" href="#"><span id="search-icon" class="ion-ios-search-strong"></span></a>
                     <div id="search-form" class="search-form">
-                        <form role="search" method="get" id="searchform" action="#">
-                            <input type="search" placeholder="搜索" required>
+                        <form role="search" method="get" id="searchform" action="{% url 'blog:search' %}">
+                            <input type="search" name="q" placeholder="搜索" required>
                             <button type="submit"><span class="ion-ios-search-strong"></span></button>
                         </form>
                     </div>
@@ -127,7 +94,7 @@
             <aside class="col-md-4">
 
             <div class="tit01">
-                <h3>资源共享池</h3>
+                <h3>非常不错的网站</h3>
                 <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
                 <p style="text-align: left"><a href="https://docs.djangoproject.com" class="btn btn-primary" target="_blank">Django</a></p>
@@ -136,7 +103,7 @@
                 <p style="text-align: left;"><a href="https://www.runoob.com/" class="btn btn-success" target="_blank">菜鸟教程</a></p>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
-                <p style="text-align: left;"><a href="https://www.liaoxuefeng.com/wiki/896043488029600" class="btn btn-danger" target="_blank">Git教程</a></p>
+                <p style="text-align: left;"><a href="https://gitee.com/imnu20gdxu/zhangyajie0615" class="btn btn-danger" target="_blank">项目代码</a></p>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
                 <p style="text-align: left;"><a href="https://www.bootcss.com/" class="btn btn-warning" target="_blank">Bootstrap</a></p>
@@ -179,8 +146,8 @@
         <ul>
             <li><a href="{% url 'blog:index' %}">首页</a></li>
             <li><a href="full-width.html">博客</a></li>
-            <li><a href="about.html">关于</a></li>
-            <li><a href="contact.html">联系</a></li>
+            <li><a href="#">留言</a></li>
+            <li><a href="{% url 'comments:notice' %}">公告</a></li>
         </ul>
     </nav>
 </div>
@@ -189,7 +156,7 @@
     <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
     <script src="https://cdn.bootcss.com/highlightjs-line-numbers.js/2.7.0/highlightjs-line-numbers.min.js"></script>
     <script>
-        hljs.initHighlightingOnLoad();
+        hljs.initHighlightingOnLoad();/*绑定高亮到页面加载事件上*/
         hljs.initLineNumbersOnLoad();
     </script>
 

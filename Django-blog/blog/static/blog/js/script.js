@@ -42,6 +42,8 @@ $("#search-menu").click(function(e){
 /*jshint browser: true, strict: true, undef: true */
 /*global define: false */
 
+
+/*
 ( function( window ) {
 
 'use strict';
@@ -149,4 +151,4 @@ if ( typeof define === 'function' && define.amd ) {
 
     triggerBttn.addEventListener( 'click', toggleOverlay );
     closeBttn.addEventListener( 'click', toggleOverlay );
-})();
+})();*/

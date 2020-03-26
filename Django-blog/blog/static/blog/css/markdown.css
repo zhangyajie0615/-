@@ -1,0 +1,28 @@
+.codehilite{
+            padding: 0;/*内边距*/
+        }
+        /* for block of numbers */
+        .hljs-ln-numbers{
+            -webkit-touch-callout: none;/*系统默认菜单被禁用*/
+            -webkit-user-select: none;/*webkit浏览器*/
+            -khtml-user-select: none;/*早期浏览器*/
+            -moz-user-select: none;/*火狐*/
+            -ms-user-select: none;/*IE10*/
+            user-select: none;
+
+            text-align: center;/*文本对齐方式*/
+            color: #ccc;
+            border-right:1px solid #ccc;/*设置右边框的样式*/
+            vertical-align: top;/*设置元素的垂直对齐方式*/
+            padding-right: 5px;/*设置元素的右内边距*/
+        }
+
+        .hljs-ln-n {
+            width: 30px;
+        }
+
+        /* for block of code */
+        .hljs-ln .hljs-ln-code {
+            padding-left: 10px;/*设置元素左内边距*/
+            white-space: pre;/*设置如何处理元素中的 空白会被浏览器保留*/
+        }

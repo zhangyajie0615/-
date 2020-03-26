@@ -1,20 +1,20 @@
-from django.shortcuts import render
-
-# Create your views here.
 from django.http import HttpResponse
 import re
 import markdown
-from django.shortcuts import render,get_object_or_404
-from .models import Post, Category, Tag,PicTest
+from django.shortcuts import render,get_object_or_404,redirect
+from .models import Post, Category, Tag
 from django.utils.text import slugify
 from markdown.extensions.toc import TocExtension
 from django.views.generic import ListView, DetailView
+from django.contrib import messages
+from django.db.models import Q
 
 
 class IndexView(ListView):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
+    paginate_by = 6
 
 
 class PostDetailView(DetailView):
@@ -78,26 +78,15 @@ class TagView(IndexView):
 #    return render(request, 'blog/index.html', context={'post_list':post_list})
 
 
+def search(request):
+    q = request.GET.get('q')
 
+    if not q:
+        error_msg = "请输入搜索关键词"
+        messages.add_message(request, messages.ERROR, error_msg, extra_tags='danger')
+        return redirect('blog:index')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    post_list = Post.objects.filter(Q(title__icontains=q) | Q(body__icontains=q))
+    return render(request, 'blog/index.html', {'post_list': post_list})
 
 

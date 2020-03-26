@@ -26,12 +26,14 @@ class Category(models.Model):
     def __str__(self):
         return self.name
 
+
 class Tag(models.Model):
     """
     标签 Tag 也比较简单，和 Category 一样。
     再次强调一定要继承 models.Model 类！
     """
     name = models.CharField(max_length=100)
+
     class Meta:
         verbose_name = '标签'
         verbose_name_plural = verbose_name
@@ -62,18 +64,9 @@ class Post(models.Model):
 
     def save(self, *args, **kwargs):
         self.modified_time = timezone.now()
-
-        #首先实例化一个Markdown类，用于渲染body的文本
-        #由于摘要并不需要生成文章目录，所以去掉了目录拓展
-        md = markdown.Markdown(extensions=[
-            'markdown.extensions.extra',
-            'markdown.extensions.codehilite',
-        ])
-
-        #先将Markdown 文本渲染成HTML文本
         #strip_tags去掉HTML文本的全部HTML标签
         #从文本摘取前54个字符赋给excerpt
-        self.excerpt = strip_tags(md.convert(self.body))[:54]
+        self.excerpt = strip_tags(self.body)[:54]
 
         super().save(*args, **kwargs)
 
@@ -86,8 +79,8 @@ class Post(models.Model):
     # 而对于标签来说，一篇文章可以有多个标签，同一个标签下也可能有多篇文章，所以我们使用
     # ManyToManyField，表明这是多对多的关联关系。
     # 同时我们规定文章可以没有标签，因此为标签 tags 指定了 blank=True。
-    category = models.ForeignKey(Category, verbose_name='分类',on_delete=models.CASCADE)
-    tags = models.ManyToManyField(Tag,'标签', blank=True)
+    category = models.ForeignKey(Category, verbose_name='分类', on_delete=models.CASCADE)
+    tags = models.ManyToManyField(Tag, verbose_name='标签', blank=True)
 
     # 文章作者，这里 User 是从 django.contrib.auth.models 导入的。
     # django.contrib.auth 是 django 内置的应用，专门用于处理网站用户的注册、登录等流程，User 是

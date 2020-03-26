@@ -15,7 +15,7 @@ sys.path.append(BASE_DIR)
 
 if __name__ == '__main__':
     # 启动 django
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "blogproject.settings.local")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "blogproject.settings")
     django.setup()
 
     from blog.models import Category, Post, Tag
@@ -31,8 +31,8 @@ if __name__ == '__main__':
 
     print('create a blog user')
     user = User.objects.create_superuser('张亚杰', '123@qq.com', '123456')
-    category_list = ['Django学习笔记', '开源项目', '工具资源', 'test category', 'test tag']
-    tag_list = ['django', 'python', 'pipenv', 'git', 'Docker', 'test tag']
+    category_list = ['Django学习笔记', '开源项目', '工具资源', 'test category']
+    tag_list = ['django', 'python', 'git', 'Docker', 'test tag']
     a_year_ago = timezone.now() - timedelta(days=365)
 
     print('create categories and tags')
@@ -42,21 +42,10 @@ if __name__ == '__main__':
     for tag in tag_list:
         Tag.objects.create(name=tag)
 
-    print('create a markdown sample post')
-    Post.objects.create(
-        title='Markdown 与代码高亮测试',
-        body=pathlib.Path(BASE_DIR).joinpath('scripts', 'md.sample').read_text(encoding='utf-8'),
-        category=Category.objects.create(name='Markdown测试'),
-        author=user,
-    )
-
     print('create some faked posts published within the past year')
-
     fake = faker.Faker('zh_CN')
     for _ in range(100):  # Chinese
-        tags = Tag.objects.order_by('?')
-        tag1 = tags.first()
-        tag2 = tags.last()
+        tags = Tag.objects.order_by('?').first()
         cate = Category.objects.order_by('?').first()
         created_time = fake.date_time_between(start_date='-1y', end_date="now",
                                               tzinfo=timezone.get_current_timezone())
@@ -67,23 +56,24 @@ if __name__ == '__main__':
             category=cate,
             author=user,
         )
-        post.tags.add(tag1, tag2)
+        post.tags.add(tags)
         post.save()
 
     print('create some comments')
     for post in Post.objects.all()[:20]:
-        post_create_time = post.created_time
-        delta_in_days = '-' + str((timezone.now() - post_create_time).days) + 'd'
-        for _ in range(random.randrange(3,15)):
+        post_created_time = post.created_time
+        delta_in_days = '-' + str((timezone.now()-post_created_time).days) + 'days'
+        for _ in range(random.randrange(3, 15)):
             Comment.objects.create(
                 name=fake.name(),
                 email=fake.email(),
-                url=fake.url(),
+                url=fake.uri(),
                 text=fake.paragraph(),
                 created_time=fake.date_time_between(
-                    start_date=delta_in_days,
-                    end_date="now",
-                    tzinfo=timezone.get_current_timezone()),
+                     start_date=delta_in_days,
+                     end_date="now",
+                     tzinfo=timezone.get_current_timezone()),
                 post=post,
             )
+
     print('done!')

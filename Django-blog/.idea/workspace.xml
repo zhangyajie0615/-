@@ -2,22 +2,255 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1842c80-9b1d-4046-85ff-a7024b57b4f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/static/mus/music.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/mus/music.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/pause.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/img/play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/fake.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/md.sample" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/static/mus/mus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/comments/notice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/leaves/inclusions/liu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/autumn.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/borland.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/bw.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/colorful.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/emacs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/friendly.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/fruity.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/github.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/manni.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/monokai.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/murphy.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/native.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/pastie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/perldoc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/tango.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/trac.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/vim.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/vs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/highlights/zenburn.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/css/pace.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/kindeditor-all-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/kindeditor-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/lang/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/lang/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/anchor/anchor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/autoheight/autoheight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/baidumap/baidumap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/baidumap/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/baidumap/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/clearhtml/clearhtml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/code/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/code/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/code/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/emoticons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/100.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/101.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/102.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/103.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/104.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/105.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/106.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/107.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/108.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/109.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/110.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/111.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/112.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/113.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/114.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/115.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/116.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/117.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/118.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/119.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/120.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/121.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/122.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/123.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/124.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/125.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/126.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/127.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/128.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/129.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/130.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/131.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/132.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/133.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/134.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/72.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/73.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/74.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/75.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/76.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/77.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/78.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/79.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/80.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/81.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/82.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/83.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/84.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/85.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/86.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/87.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/88.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/89.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/90.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/91.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/92.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/93.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/94.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/95.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/96.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/97.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/98.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/99.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/emoticons/images/static.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/filemanager/filemanager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/filemanager/images/file-16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/filemanager/images/file-64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/filemanager/images/folder-16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/filemanager/images/folder-64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/filemanager/images/go-up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/fixtoolbar/fixtoolbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/flash/flash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/image/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/image/images/align_left.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/image/images/align_right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/image/images/align_top.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/image/images/refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/insertfile/insertfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/lineheight/lineheight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/link/link.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/map/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/map/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/media/media.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/multiimage/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/multiimage/images/select-files-en.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/multiimage/images/select-files-zh-CN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/multiimage/images/swfupload.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/multiimage/multiimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/pagebreak/pagebreak.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/plainpaste/plainpaste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/preview/preview.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/quickformat/quickformat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/table/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/template/html/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/template/html/2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/template/html/3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/template/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/plugins/wordpaste/wordpaste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/themes/common/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/themes/common/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/themes/common/flash.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/themes/common/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/themes/common/media.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/themes/common/rm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/themes/default/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/themes/default/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/themes/default/default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/themes/qq/editor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/themes/qq/qq.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/kindeditor/themes/simple/simple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/modernizr.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/pace.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/blog/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/static/mus/music.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/mus/music.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/templatetags/blog_extras.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templatetags/blog_extras.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments/templatetags/comments_extras.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/templatetags/comments_extras.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/fake.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/fake.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/md.sample" beforeDir="false" afterPath="$PROJECT_DIR$/blog/static/blog/css/markdown.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/inclusions/_categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/inclusions/_categories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/inclusions/_tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/inclusions/_tags.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/comments/inclusions/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/comments/inclusions/_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Django-blog0/.idea/Django-blog.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../login/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../login/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../login/login/.idea/login.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../login/login/.idea/login.iml" afterDir="false" />
@@ -37,11 +270,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jupyter Notebook" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -54,21 +287,21 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/media/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog/static/blog/js" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\张亚杰\zhangyajie0615\Django-blog" />
+      <recent name="C:\Users\张亚杰\zhangyajie0615\Django-blog\templates" />
+      <recent name="C:\Users\张亚杰\zhangyajie0615\Django-blog\templates\leaves\inclusions" />
+      <recent name="C:\Users\张亚杰\zhangyajie0615\Django-blog\templates\leaves" />
       <recent name="C:\Users\张亚杰\zhangyajie0615\Django-blog\media\mus" />
-      <recent name="C:\Users\张亚杰\zhangyajie0615\Django-blog\media\img" />
-      <recent name="C:\Users\张亚杰\zhangyajie0615\Django-blog\templates\blog" />
-      <recent name="C:\Users\张亚杰\zhangyajie0615\Django-blog\templates\blog\inclusions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\张亚杰\zhangyajie0615\Django-blog\media\img" />
       <recent name="C:\Users\张亚杰\zhangyajie0615\Django-blog\blog\static\blog\js" />
       <recent name="C:\Users\张亚杰\zhangyajie0615\Django-blog\blog\static\blog\css" />
+      <recent name="C:\Users\张亚杰\zhangyajie0615\Django-blog\media\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -150,6 +383,22 @@
       <workItem from="1584498639881" duration="4217000" />
       <workItem from="1584512161372" duration="4978000" />
       <workItem from="1584517699860" duration="3592000" />
+      <workItem from="1584592146537" duration="925000" />
+      <workItem from="1584615879915" duration="1935000" />
+      <workItem from="1584617854377" duration="254000" />
+      <workItem from="1584667098829" duration="5980000" />
+      <workItem from="1584684141454" duration="2451000" />
+      <workItem from="1584690521625" duration="71000" />
+      <workItem from="1584690678438" duration="145000" />
+      <workItem from="1584690864124" duration="5216000" />
+      <workItem from="1584756671643" duration="15469000" />
+      <workItem from="1584854651464" duration="10643000" />
+      <workItem from="1584874798475" duration="307000" />
+      <workItem from="1584943779840" duration="6099000" />
+      <workItem from="1585019051115" duration="12949000" />
+      <workItem from="1585104071990" duration="6839000" />
+      <workItem from="1585187979465" duration="13116000" />
+      <workItem from="1585209481071" duration="6627000" />
     </task>
     <servers />
   </component>

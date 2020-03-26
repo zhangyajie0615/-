@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+
 <form action="{% url 'comments:comment' post.pk %}" method="post" class="comment-form">
   {% csrf_token %}
   <div class="row">
